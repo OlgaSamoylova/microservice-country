@@ -1,0 +1,18 @@
+spring:
+  boot:
+    admin:
+      client:
+        enabled: false
+  cloud:
+    kubernetes:
+      config:
+        enabled: false
+      reload:
+        monitoring-config-maps: false
+
+  liquibase:
+    enabled: true
+    drop-first: true
+    liquibase-schema: country
+    default-schema: country
+

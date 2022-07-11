@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="v0.1_01_initial_schema.xml" relativeToChangelogFile="true"/>
+
+    <changeSet id="2" author="Olga Samoylova">
+
+        <insert tableName="city">
+            <column name="title" value="Москва"/>
+            <column name="country_id" value="1"/>
+        </insert>
+
+        <insert tableName="city">
+           <column name="title" value="Санкт-Петербург"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Новосибирск"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Екатеринбург"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+             <column name="title" value="Казань"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Нижний Новгород"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Краснодар"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Тюмень"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Сочи"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Ростов-на-Дону"/>
+            <column name="country_id" value="1"/>
+        </insert>
+        <insert tableName="city">
+           <column name="title" value="Стокгольм"/>
+            <column name="country_id" value="2"/>
+        </insert>
+        <insert tableName="city">
+            <column name="title" value="Лунд"/>
+            <column name="country_id" value="2"/>
+        </insert>
+        <insert tableName="country">
+            <column name="id" value="1"/>
+            <column name="title" value="Россия"/>
+        </insert>
+        <insert tableName="country">
+            <column name="id" value="2"/>
+            <column name="title" value="Швеция"/>
+        </insert>
+        <insert tableName="country">
+            <column name="id" value="3"/>
+            <column name="title" value="Норвегия"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Осло"/>
+            <column name="country_id" value="3"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Берген"/>
+            <column name="country_id" value="3"/>
+        </insert>
+        <insert tableName="country">
+            <column name="id" value="4"/>
+            <column name="title" value="Финляндия"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Хельсинки"/>
+            <column name="country_id" value="4"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Рованиеми"/>
+            <column name="country_id" value="4"/>
+        </insert>
+        <insert tableName="country">
+            <column name="id" value="5"/>
+            <column name="title" value="Грузия"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Тбилиси"/>
+            <column name="country_id" value="5"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Батум"/>
+            <column name="country_id" value="5"/>
+        </insert>
+        <insert tableName="country">
+            <column name="id" value="6"/>
+            <column name="title" value="Армения"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Ереван"/>
+            <column name="country_id" value="6"/>
+        </insert>
+        <insert tableName="city">
+
+            <column name="title" value="Арарат"/>
+            <column name="country_id" value="6"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+

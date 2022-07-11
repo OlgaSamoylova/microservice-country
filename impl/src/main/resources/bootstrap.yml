@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: microservice-country
+
+  cloud:
+    kubernetes:
+      secrets:
+        sources:
+          - name: microservice-country
+      config:
+        sources:
+          - name: library-core
+          - name: microservice-country
+      reload:
+        enabled: true
+
+management:
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      enabled: true
+    info:
+      enabled: true
+    prometheus:
+      enabled: true
+
+---
+spring:
+  cloud:
+    kubernetes:
+      enabled: false
+      loadbalancer:
+        enabled: false
+  config:
+    activate:
+      on-profile: local, test
